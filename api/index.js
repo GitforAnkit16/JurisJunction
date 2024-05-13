@@ -12,7 +12,7 @@ mongoose.set("strictQuery", true);
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb+srv://ankitpanda1612:ankit12345@cluster0.oklli01.mongodb.net/?retryWrites=true&w=majority");
+    await mongoose.connect(process.env.MONGOURL);
     console.log("Connected to mongoDB!");
   } catch (error) {
     console.log(error);
