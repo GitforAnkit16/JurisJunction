@@ -20,14 +20,20 @@ import Notaries from './Pages/notaries/notaries';
 import Company from './Pages/company/Company';
 import Appointment from './Pages/appointment/Appointment';
 import Profile from "./Pages/profile/Profile";
-
+import axios from 'axios';
 import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
   Outlet
 } from "react-router-dom";
-
+axios.defaults.withCredentials = true;
+const handleSubmit = (e) => {
+  e.preventDefault();
+  axios.post('https://juris-junction-server.vercel.app//register', {name, email, password})
+  .then(result => console.log(result))
+  .catch(err => console.log(err))
+}
 function App() {
   const Layout = () => {
     return (
