@@ -1,7 +1,7 @@
 
 import "./license.css"
 import React, { useState } from 'react';
-
+import { useNavigate } from "react-router-dom";
 function Licenses() {
   const [activeCategory, setActiveCategory] = useState(null);
 
@@ -24,9 +24,15 @@ function Licenses() {
     "BIS Registration",
     "Gun Licence",
     "Liquor Licence"
-
-
   ];
+  const navigate = useNavigate();
+  const handleProfile = async () => {
+    try{
+        navigate("/profile");
+     }catch(err){
+        console.log(err);
+     }
+  }
 
   return (
     <div className='Licences'>
@@ -42,118 +48,15 @@ function Licenses() {
         ))}
       </div>
       {activeCategory && (
-        <div className='profiles'>
-        <span className='header-Arbitratoryer'>Profiles for {activeCategory}</span>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-                <li>BIS Registration</li>
-                    <li>Gun Licence</li>
-                    <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-                    <li>Gun Licence</li>
-                    <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-                    <li>Gun Licence</li>
-                    <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-                    <li>Gun Licence</li>
-                    <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-                    <li>Gun Licence</li>
-                    <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-              <li>Gun Licence</li>
-              <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-              <li>Gun Licence</li>
-              <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-              <li>Gun Licence</li>
-              <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>BIS Registration</li>
-              <li>Gun Licence</li>
-              <li>Liquor Licence</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          
-        </div>
+        <div className="df-license">
+          <div  className="cardq"> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+          <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Immigration Notary</p></div>
+          <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+          <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+          <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+          <div className="cardq"onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+          <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+    </div>
       )}
     </div>
   );

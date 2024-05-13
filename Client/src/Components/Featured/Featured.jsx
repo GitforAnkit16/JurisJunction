@@ -8,13 +8,6 @@ function Featured() {
         <div className='container'>
         <div className="left">
             <p>Attorneys in a single click</p>
-            <div className="search">
-                <div className="searchInput">
-                    <img src={search} alt = "ok"/>
-                    <input type ="text" placeholder='Search' />
-                </div>
-                <button>Search</button>
-            </div>
                 <div className="popular">
                     <span>Popular: </span>
                         <button>Criminal Lawyer</button>

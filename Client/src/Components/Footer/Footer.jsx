@@ -4,8 +4,7 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='About Us'>
-        <h2>Copyrights @Team Web Weavers</h2>
-        <h3>Made for Smart India Hackathon</h3>
+        <h2>Copyrights @ Ankit Panda</h2>
       </div>
     </div>
   )

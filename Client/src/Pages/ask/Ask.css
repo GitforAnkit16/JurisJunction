@@ -1,39 +1,64 @@
-.ask{
+.ask {
     height: 500px;
     width: 100%;
-    background: rgb(230,90,255);
-    background: linear-gradient(82deg, rgba(230,90,255,0.8968837535014006) 0%, rgba(84,36,207,1) 60%);
+    background: rgb(230, 90, 255);
+    background: linear-gradient(82deg, rgba(230, 90, 255, 0.8968837535014006) 0%, rgba(84, 36, 207, 1) 60%);
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
- .ask h1
-{color: rgb(0, 0, 0);
+  }
+  
+  .ask h1 {
+    color: rgb(0, 0, 0);
     font-size: 54px;
-}
-.con{
+  }
+  
+  .con {
     height: 700px;
     background-color: rgb(208, 209, 209);
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-}
-.cardw{
-   height: 400px;
-   width: 300px;
-   background-color: rgb(255, 255, 255);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 10px;
-   box-shadow: 0px 5px 12px rgb(123, 121, 116);
-}
-i{
-    font-size: 38px;
-}
-.cardw:hover{
-    transform:scale(1.05);
+  }
+  
+  .cardw {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgb(123, 121, 116);
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease; 
+  }
+  
+  .cardw:hover {
+    transform: scale(1.05);
     background-color: rgb(192, 199, 206);
-}
+  }
+  
+  .selected {
+    filter: brightness(80%); 
+  }
+  
+  .selected:hover {
+    background-color: #bbb; /* Darken the selected card on hover */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  

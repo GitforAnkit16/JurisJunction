@@ -3,7 +3,6 @@
     justify-content: center;
 
 }
-/* Container for the two boxes */
 .containerrr {
     display: flex;
     justify-content: left;
@@ -15,10 +14,8 @@
     height: 353px;
 
 }
-
-/* Style for the individual boxes */
 .box {
-    width: 40%; /* Each box occupies 49% of the screen width */
+    width: 40%; 
     height: 200px;
     margin: 10px;
     margin-left: 50px;

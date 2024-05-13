@@ -45,7 +45,7 @@ function Guide(){
                     </div>
                     </div>
                     </div>
-                    <div className='butter'><button>Know More</button></div>
+                    
                 </div>}
                 
                 
@@ -53,7 +53,7 @@ function Guide(){
                 <div >
                     <div className='steps'>
                     <div className='boxie'>
-                        <div className='img'><img src="https://th.bing.com/th/id/OIP.zDTl2zIbGf_Prb_8QxmCiwHaF4?w=241&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" /></div>
+                        <div className='img'><img src="https://th.bing.com/th/id/R.36c53959a2aa235ebf936b6d1379d3c6?rik=vMsxN1QceVu92g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcheckmark-transparent%2fcheckmark-transparent-18.png&ehk=W7GQ24b3v9b7mDBtYQxNaHzTPx0m8ZdwvkJB%2fiI6iww%3d&risl=&pid=ImgRaw&r=0" alt="" /></div>
                         <div>1:Register & Verify</div>
                         <div className="inbox">Register yourself and verify using valid documents</div>
                         </div>
@@ -79,7 +79,7 @@ function Guide(){
                         </div>
                     </div>                   
                     </div>
-                    <div className="butter"><button>Know More</button></div>
+                   
                 </div>}
             </section>
             </div>

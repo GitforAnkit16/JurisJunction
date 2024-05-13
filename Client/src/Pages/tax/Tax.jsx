@@ -1,14 +1,14 @@
 
 import "./Tax.css"
 import React, { useState } from 'react';
-
+import { useNavigate } from "react-router-dom";
 function Tax() {
   const [activeCategory, setActiveCategory] = useState(null);
 
   const handleCategoryClick = (category) => {
     setActiveCategory(activeCategory === category ? null : category);
   };
-
+  const navigate = useNavigate();
   const categorie = [
     "GST and Other Indirect Tax",
     "Changes in Pvt Ltd Company",
@@ -17,10 +17,14 @@ function Tax() {
     "Labour Compliance",
     "Accounting & Tax",
     "Convert Your Business"
-
-
-
   ];
+  const handleProfile = async () => {
+    try{
+        navigate("/profile");
+     }catch(err){
+        console.log(err);
+     }
+  }
 
   return (
     <div className='Tax'>
@@ -36,118 +40,15 @@ function Tax() {
         ))}
       </div>
       {activeCategory && (
-        <div className='profiles'>
-        <span className='header-Arbitratoryer'>Profiles for {activeCategory}</span>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-                <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership"</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          <div className='profile'>
-            <img src = "https://picsum.photos/200/300" alt="profile-dp"></img>
-            <h3>John Snow</h3>
-            <p>Specialization:-</p>
-              <ul>
-              <li>GST and Other Indirect Tax </li>
-                <li>Changes in Pvt Ltd Company</li>
-                <li>Changes In Limited Liability Partnership</li>
-              </ul>
-              <p>Location:- Bhubaneswar,Odisha,India</p>
-               <button>Book An Appointment</button> 
-          </div>
-          
-        </div>
+      <div className="df-tax">
+        <div  className="cardq"> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+        <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Immigration Notary</p></div>
+        <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+        <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+        <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+        <div className="cardq"onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+        <div className="cardq" onClick={(handleProfile)}> <img src="https://picsum.photos/200" alt=""  /><h3>Akshay</h3><p>Lorem ipsum dolor sit.</p></div>
+    </div>
       )}
     </div>
   );
